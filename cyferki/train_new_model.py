@@ -72,4 +72,4 @@ for _ in range(10):
         best_acc = test_acc
         model.save('model')
 
-
+print('Best accuracy: ', best_acc)
