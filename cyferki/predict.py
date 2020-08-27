@@ -20,17 +20,16 @@ model = keras.models.load_model('model')
 predictions = model.predict(test_imgs)
 
 print('=======================================================================\n',
-	  '                      	 											  \n',
-	  '                              PROGRAM START                            \n',
-	  '                                                                       \n',
-	  '======================================================================')
+      '                      	 											  \n',
+      '                              PROGRAM START                            \n',
+      '                                                                       \n',
+      '======================================================================')
 
 count = input("How many numbers?: ")
 
 matplotlib.use('TkAgg')
 
 for i in range(int(count)):
-
     current_num = random.randint(0, len(test_imgs))
 
     plt.grid(False)

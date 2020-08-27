@@ -67,9 +67,8 @@ for _ in range(10):
 
     if test_acc > best_acc:
 
-        print('New best network with score ', best_acc)
-
         best_acc = test_acc
+        print('New best network with score ', best_acc)
         model.save('model')
 
 print('Best accuracy: ', best_acc)
