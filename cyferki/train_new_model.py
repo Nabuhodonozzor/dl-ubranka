@@ -61,6 +61,8 @@ for _ in range(10):
     model.fit(train_imgs, train_labels, epochs=10)
     test_loss, test_acc = model.evaluate(test_imgs, test_labels)
 
+    print(best_acc)
+
     # saving network if it scores better
 
     if test_acc > best_acc:
@@ -70,4 +72,4 @@ for _ in range(10):
         best_acc = test_acc
         model.save('model')
 
-print('Best accuracy: ', best_acc)
+
