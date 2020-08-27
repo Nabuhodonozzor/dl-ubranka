@@ -49,7 +49,7 @@ model.compile(
 model.fit(train_imgs, train_labels, epochs=10)
 test_loss, test_acc = model.evaluate(test_imgs, test_labels)
 
-# model.save('model')
+# predicting and displaying some numbers
 
 predictions = model.predict(test_imgs)
 
@@ -61,5 +61,5 @@ for i in range(10):
     plt.imshow(test_imgs[current_num].reshape((img_size, img_size)), cmap="Greys")
     prediction = np.argmax(predictions[current_num])
     plt.xlabel('Actual: ' + str(test_labels[current_num]))
-    plt.title('Prediction: ' + str(labels[prediction]) + '| Certanity: ' + str(predictions[current_num][prediction]))
+    plt.title('Prediction: ' + str(labels[prediction]) + ' | Certanity: ' + str(predictions[current_num][prediction]))
     plt.show()
