@@ -4,3 +4,5 @@ Packages needed for the code to work:
 	matlpotlib
 
 It is recommended to create a venv.
+
+Additional data packages need to be downloaded in order for the network to work, information provided in the data/source.txt file
