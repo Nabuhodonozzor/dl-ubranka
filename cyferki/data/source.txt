@@ -1,3 +1,3 @@
-https://www.python-course.eu/neural_network_mnist.php
+https://wutwaw-my.sharepoint.com/:f:/g/personal/01149820_pw_edu_pl/Eok94r1zWoxOruyXm5xBIEQBEa6JnEhAuBCz-9wxPU7FAw?e=AYNcyo
 
 download: mnist_train.csv, mnist_test.csv and drop those files in this folder
