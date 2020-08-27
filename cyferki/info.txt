@@ -1,0 +1,6 @@
+Packages needed for the code to work:
+	tensorflow (works only with 64-bit Python 3.5-3.8)	
+	numpy
+	matlpotlib
+
+It is recommended to create a venv.
