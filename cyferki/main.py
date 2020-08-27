@@ -1,8 +1,12 @@
 import matplotlib.pyplot as plt
+import matplotlib 
+import _tkinter as tk
 from tensorflow import keras
 import tensorflow as tf
 import numpy as np
 import random
+
+matplotlib.use('TkAgg')
 
 img_size = 28       # size of input image
 label_count = 10    # number of numbers
@@ -53,16 +57,9 @@ for i in range(10):
 
     current_num = random.randint(0, len(test_imgs))
 
-
-
     plt.grid(False)
     plt.imshow(test_imgs[current_num].reshape((img_size, img_size)), cmap="Greys")
     prediction = np.argmax(predictions[current_num])
     plt.xlabel('Actual: ' + str(test_labels[current_num]))
     plt.title('Prediction: ' + str(labels[prediction]) + '| Certanity: ' + str(predictions[current_num][prediction]))
     plt.show()
-
-
-
-
-
