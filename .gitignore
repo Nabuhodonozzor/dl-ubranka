@@ -1,6 +1,8 @@
 venv/
 cyferki/data/mnist_train.csv
 cyferki/data/mnist_test.csv
-cyferki/model
+cyferki/model/
+cyferki/dist/
+cyferki/build/
 __pycache__
 .idea

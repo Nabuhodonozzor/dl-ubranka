@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import matplotlib 
 import _tkinter as tk
-from tensorflow import keras
 import tensorflow as tf
 import numpy as np
 import random
+from tensorflow import keras
 
 matplotlib.use('TkAgg')
 
@@ -15,7 +15,9 @@ labels = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 # loading data
 
-train_data = np.loadtxt("data/mnist_train.csv", delimiter=',')
+print('Loading data')
+
+train_data = np.loadtxt('data/mnist_train.csv', delimiter=',')
 test_data = np.loadtxt('data/mnist_test.csv', delimiter=',')
 
 # separating data into test and train
@@ -69,6 +71,6 @@ for _ in range(10):
 
         best_acc = test_acc
         print('New best network with score ', best_acc)
-        model.save('model')
+        model.save('../model')
 
 print('Best accuracy: ', best_acc)

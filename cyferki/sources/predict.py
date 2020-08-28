@@ -1,19 +1,24 @@
 import matplotlib.pyplot as plt
 import matplotlib
 import _tkinter as tk
-from tensorflow import keras
 import random
 import numpy as np
+from tensorflow import keras
+
 
 img_size = 28
 label_count = 10
 
 labels = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
+print('Loading test data')
+
 test_data = np.loadtxt('data/mnist_test.csv', delimiter=',')
 
 test_imgs = np.array(test_data[:, 1:])
 test_labels = np.array(test_data[:, :1])
+
+print('Loading model')
 
 model = keras.models.load_model('model')
 
